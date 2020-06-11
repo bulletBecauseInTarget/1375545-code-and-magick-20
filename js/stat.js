@@ -1,7 +1,4 @@
-
 'use strict';
-var canvas = document.getElementById('canvas');
-var ctx = canvas.getContext('2d');
 
 var CLOUD_WIDTH = 420;
 var CLOUD_HEIGHT = 270;
@@ -33,9 +30,6 @@ var getMaxElement = function (arr) {
   }
   return maxElement;
 };
-
-var players = ['Вы'];
-var times = [];
 window.renderStatistics = function (ctx, players, times) {
   renderCloud(ctx, CLOUD_X + GAP, CLOUD_Y + GAP, 'rgba(0, 0, 0, 0.7)');
   renderCloud(ctx, CLOUD_X, CLOUD_Y, '#fff');
